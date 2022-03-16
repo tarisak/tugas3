@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> Kalkulator Sederhana </title>
+    </head>
+    <script language = "JavaScript">
+      
+        function tambah () {
+            var val1 = parseInt(document.kirim.T1.value)
+            var val2 = parseInt(document.kirim.T2.value)
+            var hasil = (val1+val2)
+            document.kirim.T3.value = hasil
+        }
+         function kurang () {
+            var val1 = parseInt(document.kirim.T1.value)
+            var val2 = parseInt(document.kirim.T2.value)
+            var hasil = (val1-val2)
+            document.kirim.T3.value = hasil
+        }
+        function kali () {
+            var val1 = parseInt(document.kirim.T1.value)
+            var val2 = parseInt(document.kirim.T2.value)
+            var hasil = (val1*val2)
+            document.kirim.T3.value = hasil
+        }
+        function bagi () {
+            var val1 = parseInt(document.kirim.T1.value)
+            var val2 = parseInt(document.kirim.T2.value)
+            var hasil = (val1/val2)
+            document.kirim.T3.value = hasil
+        }
+        
+    </script>
+    <body style="padding-left:14cm;
+            padding-right:12cm;">
+        <div style="background-color: rgb(238, 187, 238);"> 
+        <h3 style="font-size: 35px;
+                    padding-left:1.5cm;"> KALKULATOR </h3>
+        <form name="kirim">
+            <p> Bilangan 1 : <input type="text" name="T1" size="20"></p>
+            <p> Bilangan 2 : <input type="text" name="T2" size="20"></p>
+            <p style="padding-left:0.98cm;"> Hasil : <input type="text" name="T3" size="20" ></p>
+            
+            <p style="padding-left:4.3cm;">
+            <input type="button" 
+            VALUE="+"
+            name="B1"
+            onClick = tambah()>
+
+            <input type="button" 
+            VALUE="-"
+            name="B2"
+            onClick = kurang()>
+
+            <input type="button" 
+            VALUE="x"
+            name="B3"
+            onClick = kali()>
+
+            <input type="button" 
+            VALUE="/"
+            name="B4"
+            onClick = bagi()>
+            </p>
+        </form>
+        </div>
+        <b>Dimodifikasi terakhir pada : </b>
+        <script language = "JavaScript">
+            function modif(){
+                document.write(document.lastModified);
+            }
+            modif();
+        </script>
+    </body>
+</html>
